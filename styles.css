@@ -95,6 +95,52 @@ a {
   color: var(--red-600);
   font-size: 15px;
 }
+.rede-sociais{
+   display: flex;
+   align-items: center;
+   margin: -400px 0 0 -100px;
+   position: absolute;
+}
+
+.whatzapp{
+  position: fixed;
+  width: 41px;
+  margin: 32px 0 0 20px;
+  mix-blend-mode: multiply;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.facebook{
+    position: fixed;
+    width: 60px;
+    margin: 22px 0 0 70px;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.instagram{
+    position: fixed;
+    width: 55px;
+    margin: 26px 0 0 135px;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.instagram:hover{
+    width: 70px;
+}
+
+.facebook:hover{
+    width: 80px;
+}
+
+.whatzapp:hover{
+    width: 70px;
+}
+ 
 
 .hero-grid {
   display: grid;
@@ -611,6 +657,14 @@ a {
   gap: 0.35rem;
   text-align: center;
   color: var(--muted);
+
+  a{
+    cursor: pointer;
+  }
+
+  a:hover{
+    color: var(--red-600);
+  }
 }
 
 .footer p {
