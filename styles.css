@@ -92,7 +92,8 @@ a {
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: #fff;
+  color: var(--red-600);
+  font-size: 15px;
 }
 
 .hero-grid {
@@ -154,6 +155,8 @@ a {
 .button:hover,
 .button:focus-visible {
   transform: translateY(-1px);
+  background-color: var(--red-600);
+  color: var(--bg);
 }
 
 .button-primary {
@@ -625,13 +628,13 @@ a {
 
 @media (max-width: 1100px) {
   .stack-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
   }
 
   .hero-grid,
   .about-panel,
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
     justify-content: flex-start;
     
   }
@@ -751,5 +754,16 @@ a {
   .contact-card,
   .map-card {
     min-height: 0;
+  }
+}
+
+@media (max-width: 450px){
+  .hero-grid{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-grid{
+    grid-template-columns: 1fr;
   }
 }
