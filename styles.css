@@ -174,12 +174,19 @@ a {
   min-height: 20vh;
 }
 
+.infinity{
+  display: flex;
+}
+
 .circle{
   position: relative;
   width: 150px;
   height: 150px;
+  margin: -6px;
 
   span{
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -192,8 +199,8 @@ a {
     content: '';
     position: absolute;
     right: 0;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background-color: var(--red-600);
     border-radius: 50%;
     box-shadow: 
@@ -204,7 +211,18 @@ a {
       0 0 80px var(--red-600),
       0 0 100px var(--red-600);
     transform: scale(0.1); 
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: animar 4s linear infinite;
+    animation-delay: calc(.1s * var(--i));
+  }
+}
+
+.circle:nth-child(2) {
+  transform: rotate(-180deg);
+
+  span::before {
+
+    animation-delay: calc(-.1s * var(--i));
+
   }
 }
 
