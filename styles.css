@@ -98,7 +98,7 @@ a {
 .rede-sociais{
    display: flex;
    align-items: center;
-   margin: -400px 0 0 -100px;
+   margin: -200px 0 0 -10px;
    position: absolute;
 }
 
@@ -820,4 +820,5 @@ a {
   .contact-grid{
     grid-template-columns: 1fr;
   }
+ 
 }
